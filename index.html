@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="utf-8">
       <title>
       </title>
       <style type="text/css">
@@ -9,14 +10,32 @@
          padding: 0;
          box-sizing: border-box;
       }
+      .special{
+         background-color: red;
+         position: relative;
+      }
+      div.sticky {
+         position: -webkit-sticky;
+         position: sticky;
+         top: 0;
+         height: 100vh;
+         background-color: transparent;
+         padding: 50px;
+         font-size: 20px;
+      }
+      .content{
+         /*position: absolute;*/
+         margin-top: -100vh;
+      }
       ul{
          list-style-type: none;
       }
       .parent{
          display: flex;
-         height: 600px;
+         /*height: 100vh;*/
          width: 100%;
          background-color: blue;
+         position: sticky;
       }
       .left-part{
          width: 20%;
@@ -37,14 +56,14 @@
       }
       .right-part{
          width: 80%;
-         padding: 0 200px;
-         overflow-y: hidden;
+         /*padding: 0 200px;*/
+         overflow-y: scroll;
       }
       .sec{
          transition: transform 300ms ease-in-out;
       }
       .sec{
-         height: 100%;
+         height: 100vh;
          background-color: pink;
          display: flex;
          justify-content: center;
@@ -69,8 +88,117 @@
       </style>
    </head>
    <body>
+      <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </p><p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </p><p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </p><p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </p>
       <div class="parent">
-         <div class="left-part">
+         <div class="left-part sticky">
             <div class="nav">
                <span></span>
             </div>
